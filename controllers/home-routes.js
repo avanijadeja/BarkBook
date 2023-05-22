@@ -34,7 +34,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
       where:{"userId": req.session.userId},
       include: [User,Groomer]
     });
-    console.log(commentData);
+ 
      const comments = commentData.map((Comment) => Comment.get({ plain: true }));
 console.log(comments);
     res.render('all-reviews', {
@@ -67,7 +67,7 @@ router.get('/groomer/:id',withAuth, async (req, res) => {
       ],
     });
 const groomer = dbGroomerData.get({ plain: true });
-console.log(groomer.name);
+
     // console.log(groomer.comment.commentText);
     res.render('profile', {
       layout: 'groomermain',
@@ -101,7 +101,7 @@ router.get('/groomer/:id/newreview', withAuth,async (req, res) => {
       ],
     });
 const groomerreview = dbGroomerReview.get({ plain: true });
-console.log(groomerreview);
+
     res.render('newreview', {
      layout: 'groomermain',
       groomerreview,
