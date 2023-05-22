@@ -8,7 +8,7 @@ router.post('/review', withAuth, async (req, res) => {
  
   try {
     const newPost = await Comment.create({ ...body, userId: req.session.userId });
-    console.log("Here is the new post: ",  newPost);
+    //console.log("Here is the new post: ",  newPost);
     res.json(newPost);
      } catch (err) {
        console.log('IT FAILED!', err);
