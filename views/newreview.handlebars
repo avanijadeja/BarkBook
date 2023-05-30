@@ -1,44 +1,40 @@
+<header class="header" style="font-size: 9vw;">{{groomerreview.name}}</header>
+<h5 class="groomerContact">
+  Email: <span>{{groomerreview.email}}</span> &#9679;
+  Phone: <span>{{groomerreview.phone}}</span> &#9679;
+  Motto: <span>{{groomerreview.motto}}</span>
+</h5>
+<hr style="width: 75%;">
 
-  <Section class="commentSection">
-    <div class="container">
-       
-      <div class="col-md-4">
+<Section class="commentSection">
+  <div>
+    
+
     <div class="cards-list">
       <div class=" card">
         <div class="card_image">
-           <a href="/groomer/{{groomerreview.id}}"></a>
+          <a href="/groomer/{{groomerreview.id}}"></a>
           <h2>{{groomerreview.name}}</h2>
-         <img src="/assets/{{groomerreview.profilePicture}}"> 
+          <img src="/assets/{{groomerreview.profilePicture}}"> 
         </div>
-        <h5>
-          Email: <span>{{groomerreview.email}}</span><br>
-          Phone: <span>{{groomerreview.phone}}</span><br>
-          Motto: <span>{{groomerreview.motto}}</span>
-         
-        </h5>
-        
       </div>
-       
-      </div>
-     
     </div>
-</div>
-<div class="col-md-8">
 
-<h2 class="card-header">Create New Review</h2>
+  </div>
+
+<div>
+  <h2 class="card-header">Add a New Review</h2>
   <form class="card-body" id="new-post-form">
     <input type="hidden" name="post-id" id="post-id" value="{{groomerreview.id}}"/>
-  
+    
     <div>
-      <label class="form-label">Add Review</label>
-      <textarea class="form-textarea form-input" name="add-review" data-number="8"></textarea>
+    <textarea class="form-textarea form-input" name="add-review" data-number="8">
+    </textarea>
     </div>
- 
-  <button class="btn btn-primary">CREATE</button>
+    <button class="btn btn-primary submitBtn">ADD</button>
   </form>
 </div>
- 
-  </Section>
+</Section>
   
 
 <script src="/js/new.js"></script>

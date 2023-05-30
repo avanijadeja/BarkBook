@@ -1,22 +1,15 @@
-
-<section class="flex-row justify-center"></section>
+<div class="header">The Groomers</div>
+<div class="cards-list">
   {{#each groomers as |Groomer|}}
   <a href="/groomer/{{id}}">
   <div class="cards-list">
-    <div class=" card">
-      <div class="card_image" >
-       
+    <div class="card">
+      <div class="card_image">
         <h2>{{name}}</h2>
-        <img src="/assets/{{profilePicture}}""> 
-       
+        <img src="/assets/{{profilePicture}}"> 
       </div>
-      
     </div>
-
     </div>
     </a>
   {{/each}}
-</section>
-
-
-
+</div>

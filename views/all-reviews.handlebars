@@ -1,25 +1,20 @@
-<div class="row">
-  <div class="col-auto">
-    {{!-- this can not be displayed somehow --}}
-  <h2>{{user.username}}</h2>
-  </div>
-</div>
-<br>
 
+    {{!-- this can not be displayed somehow --}}
+  {{!-- <h2>{{user.username}}'s Reviews</h2> --}}
 
  {{#if comments.length}}
 <div class="comments">
+<h3 id="all-reviews-header">My Reviews Dashboard</h3>
+<img class="typeyDog" src="/assets/typing-corgi.gif">
   {{#each comments as |comment|}}
   <div class="eachreview">
     <p class="card-body2">
-   <h5>Groomer Name :{{groomer.name}} </h5>
-    <h5>Review :   {{commentText}} </h5>
-    <h5> Date  :  {{format_date dateCreated}}</h5>
+      <h5>Groomer Name : {{groomer.name}} </h5>
+      <h5>Review :   {{commentText}} </h5>
+      <h5> Posted On  :  {{format_date dateCreated}}</h5>
    </p>
-</div>
+  </div>
 
  {{/each}}
 </div>
 {{/if}}
-
-

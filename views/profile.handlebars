@@ -1,35 +1,29 @@
+<div class="header"style="font-size: 9vw;">{{groomer.name}}</div>
+<h5 class="groomerContact">
+  Email: <span>{{groomer.email}}</span> &#9679;
+  Phone: <span>{{groomer.phone}}</span> &#9679;
+  Motto: <span>{{groomer.motto}}</span>
+</h5>
+<hr style="width: 75%;">
 
-
-  <Section class="commentSection">
-    <div class="container">
-       
-      <div class="col-md-4">
+<Section class="commentSection">
+  <div>
     <div class="cards-list">
       <div class=" card">
         <div class="card_image">
-           <a href="/groomer/{{groomer.id}}"></a>
+          <a href="/groomer/{{groomer.id}}"></a>
           <h2>{{groomer.name}}</h2>
          <img src="/assets/{{groomer.profilePicture}}"> 
         </div>
-        <h5>
-          Email: <span>{{groomer.email}}</span><br>
-          Phone: <span>{{groomer.phone}}</span><br>
-          Motto: <span>{{groomer.motto}}</span>
-        </h5>
-        
       </div>
-       
-      </div>
-     
     </div>
 </div>
-<div class="col-md-8">
- <a href="/groomer/{{groomer.id}}/newreview/">➕ New Review</a>
+<div class="groomerProfileRightSection">
+  <h2>What people are saying about {{groomer.name}}...</h2>{{> comments groomer.comments}}
+  <img class="bouncyDog" src="/assets/corgi-excited.gif">
+  <h2>Worked with {{groomer.name}}?</h2>
+  <a href="/groomer/{{groomer.id}}/newreview/" style="font-size: 25px;">➕ Add a Review!
+  </a>
+</div>
 
-{{> comments groomer.comments}}
-     </div>  
-  </div>
-
-  </Section>
-  
-
+</Section>
