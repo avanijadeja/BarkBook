@@ -1,11 +1,12 @@
-// Main routes stored in index.js 
+// Main routes stored in index.js
+const router = require("express").Router();
+const apiRoutes = require("./api");
+const homeRoutes = require("./home-routes.js");
 
-const router = require('express').Router();
+// set route for homeRoutes
+router.use("/", homeRoutes);
 
-const apiRoutes = require('./api');
-const homeRoutes = require('./home-routes.js');
-
-router.use('/', homeRoutes);
-router.use('/api', apiRoutes);
+// set route for apiroutes
+router.use("/api", apiRoutes);
 
 module.exports = router;

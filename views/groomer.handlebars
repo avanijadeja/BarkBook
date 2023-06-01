@@ -1,15 +1,16 @@
+<!-- for display all groomer name and profile picture  -->
 <div class="header">The Groomers</div>
 <div class="cards-list">
   {{#each groomers as |Groomer|}}
-  <a href="/groomer/{{id}}">
-  <div class="cards-list">
-    <div class="card">
-      <div class="card_image">
-        <h2>{{name}}</h2>
-        <img src="/assets/{{profilePicture}}"> 
+    <a href="/groomer/{{id}}">
+      <div class="cards-list">
+        <div class="card">
+          <div class="card_image">
+            <h2>{{name}}</h2>
+            <img src="/assets/{{profilePicture}}" />
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
     </a>
   {{/each}}
 </div>

@@ -1,40 +1,52 @@
+<!-- display groomer data -->
 <header class="header" style="font-size: 9vw;">{{groomerreview.name}}</header>
 <h5 class="groomerContact">
-  Email: <span>{{groomerreview.email}}</span> &#9679;
-  Phone: <span>{{groomerreview.phone}}</span> &#9679;
-  Motto: <span>{{groomerreview.motto}}</span>
+  Email:
+  <span>{{groomerreview.email}}</span>
+  &#9679; Phone:
+  <span>{{groomerreview.phone}}</span>
+  &#9679; Motto:
+  <span>{{groomerreview.motto}}</span>
 </h5>
-<hr style="width: 75%;">
+<hr style="width: 75%;" />
 
+<!-- display all comments for particular groomer -->
 <Section class="commentSection">
   <div>
-    
-
     <div class="cards-list">
-      <div class=" card">
+      <div class="card">
         <div class="card_image">
           <a href="/groomer/{{groomerreview.id}}"></a>
           <h2>{{groomerreview.name}}</h2>
-          <img src="/assets/{{groomerreview.profilePicture}}"> 
+          <img src="/assets/{{groomerreview.profilePicture}}" />
         </div>
       </div>
     </div>
 
   </div>
-
-<div>
-  <h2 class="card-header">Add a New Review</h2>
-  <form class="card-body" id="new-post-form">
-    <input type="hidden" name="post-id" id="post-id" value="{{groomerreview.id}}"/>
-    
-    <div>
-    <textarea class="form-textarea form-input" name="add-review" data-number="8">
-    </textarea>
-    </div>
-    <button class="btn btn-primary submitBtn">ADD</button>
-  </form>
-</div>
+  <!-- add review button -->
+  <div>
+    <h2 class="card-header">Add a New Review</h2>
+    <form class="card-body" id="new-post-form">
+      <input
+        type="hidden"
+        name="post-id"
+        id="post-id"
+        value="{{groomerreview.id}}"
+      />
+      <!-- textbox for adding comments -->
+      <div>
+        <textarea
+          class="form-textarea form-input"
+          name="add-review"
+          data-number="8"
+        >
+        </textarea>
+      </div>
+      <!-- add button -->
+      <button class="btn btn-primary submitBtn">ADD</button>
+    </form>
+  </div>
 </Section>
-  
 
 <script src="/js/new.js"></script>
