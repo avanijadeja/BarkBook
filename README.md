@@ -56,7 +56,9 @@ so applicaiton now starts user have to write localhost:3001 in browser so user c
 
 # Usage
 
+
 ![video_gifformat](./public/assets/projectdemo.gif)
+
 
 The URL of the functional, deployed application - https://barkbookapp.herokuapp.com/
 
