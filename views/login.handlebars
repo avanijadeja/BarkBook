@@ -1,36 +1,64 @@
+<header class="parent">BarkBook.
+  <img class="logoDog" src="./assets/corgiWave.gif" alt="logo" />
+</header>
 
+<h4 class="subtitle">The go-to app for dog-approved groomers.</h4>
+<section class="main">
+  <!-- login form -->
+  <form class="login-form">
+    <h4>Log In</h4>
+    <div>
+      <input
+        type="email"
+        name="logemail"
+        placeholder="Email"
+        id="logemail"
+        autocomplete="off"
+      />
+    </div>
+    <div>
+      <input
+        type="password"
+        name="logpass"
+        placeholder="Password"
+        id="logpass"
+        autocomplete="off"
+      />
+      <i class="input-icon uil uil-lock-alt"></i>
+    </div>
+    <button class="btn btn-primary submitBtn" type="submit">Log in</button>
+  </form>
 
-  <header class="parent">BarkBook.
-    <img class="logoDog" src="./assets/corgiWave.gif" alt="logo">
+  <div class="or">OR</div>
+  <!-- signup form-->
+  <form class="signup-form">
+    <h4>Sign Up</h4>
+    <div>
+      <input
+        type="text"
+        name="signUpName"
+        placeholder="Full Name"
+        id="signUpName"
+        autocomplete="off"
+      />
+      <input
+        type="email"
+        name="signUpEmail"
+        placeholder="Email"
+        id="signUpEmail"
+        autocomplete="off"
+      />
+      <input
+        type="password"
+        name="signUpPassword"
+        placeholder="Password"
+        id="signUpPassword"
+        autocomplete="off"
+      />
+      <i class="input-icon uil uil-lock-alt"></i>
+    </div>
+    <button class="btn btn-primary submitBtn" type="submit">Sign Up!</button>
+  </form>
+</section>
 
-  </header>
-  <h4 class="subtitle">The go-to app for dog-approved groomers.</h4>
-  <section class="main">
-    <form class="login-form">
-      <h4>Log In</h4>
-      <div>
-        <input type="email" name="logemail" placeholder="Email" id="logemail" autocomplete="off">
-      </div>	
-      <div>
-        <input type="password" name="logpass" placeholder="Password" id="logpass" autocomplete="off">
-        <i class="input-icon uil uil-lock-alt"></i>
-      </div>
-
-        <button class="btn btn-primary submitBtn" type="submit">Log in</button>
-
-    </form>
-    <div class="or">OR</div>
-    <form class="signup-form">
-      <h4>Sign Up</h4>
-      <div>
-        <input type="text" name="signUpName" placeholder="Full Name" id="signUpName" autocomplete="off">
-        <input type="email" name="signUpEmail" placeholder="Email" id="signUpEmail" autocomplete="off">
-        <input type="password" name="signUpPassword" placeholder="Password" id="signUpPassword" autocomplete="off">
-        <i class="input-icon uil uil-lock-alt"></i>
-      </div>
-     <button class="btn btn-primary submitBtn" type="submit">Sign Up!</button>
-    </form>
-  </section>
-
-  <script src="./js/login.js"></script>
-
+<script src="./js/login.js"></script>

@@ -1,99 +1,116 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-  <title>BarkBook</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- for style.css -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!--  for owl carousel library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- for owl carousel theme libeary -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>BarkBook</title>
+  </head>
 
-<body class="profileGradient">
-  <nav>
-    <a href="/groomer">BarkBook</a>
-    <ul>
-      <li><a href="/groomer">Home</a>
-      </li>
-      <img id="paw"src="/assets/paw.png" alt="paw logo">
-      <li ><a href="/dashboard">Dashboard</a>
-      </li>
-      <img id="paw"src="/assets/paw.png" alt="paw logo">
-      {{#if loggedIn}}
-     <li class="li-inline nav-item"><a href="/" id="logout-link">Logout</a>
-     </li>
+  <body class="profileGradient">
+    <!-- Nav Bar -->
+    <nav>
+      <a href="/groomer">BarkBook</a>
+      <ul>
+        <li><a href="/groomer">Home</a>
+        </li>
+        <img id="paw" src="/assets/paw.png" alt="paw logo" />
+        <li><a href="/dashboard">Dashboard</a>
+        </li>
+        <img id="paw" src="/assets/paw.png" alt="paw logo" />
+        <!-- if user login and press logout button then redirect Login page-->
+        {{#if loggedIn}}
+          <li class="li-inline nav-item"><a href="/" id="logout-link">Logout</a>
+          </li>
         {{/if}}
-    </ul>
-  </nav>
-  
-<div>{{{body}}}</div>
-<div id="carousel">
-<p id="carouselText">Best in show <img class="typeyDog" src="/assets/micDrop.gif" style="height: 8vw;
-  width: 9vw;">
-  </p>
-  <div class="owl-carousel owl-theme">
-    <div class="item">
-      <img src="/assets/profile11.png">
-    </div>
-    <div class="item">
-      <img src="/assets/profile2.png">
-    </div>
-      <div class="item">
-      <img src="/assets/profile6.png">
-    </div>
-            <div class="item">
-      <img src="/assets/dog1.png">
-    </div>
-      <div class="item">
-      <img src="/assets/profile4.png">
-    </div>
-      <div class="item">
-      <img src="/assets/profile13.png">
-    </div>
-      <div class="item">
-      <img src="/assets/profile14.png">
-    </div>
-     <div class="item">
-      <img src="/assets/dog3.png">
-    </div>
+      </ul>
+    </nav>
 
-  </div>
-</div>
+    <!-- {{{body}}} replace with particular handlerbar-->
+    <div>{{{body}}}</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-</script>
+    <!-- Bottom of page add carousel for particular images-->
+    <div id="carousel">
+      <p id="carouselText">Best in show
+        <img
+          class="typeyDog"
+          src="/assets/micDrop.gif"
+          style="height: 8vw;
+  width: 9vw;"
+        />
+      </p>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="/assets/profile11.png" />
+        </div>
+        <div class="item">
+          <img src="/assets/profile2.png" />
+        </div>
+        <div class="item">
+          <img src="/assets/profile6.png" />
+        </div>
+        <div class="item">
+          <img src="/assets/dog1.png" />
+        </div>
+        <div class="item">
+          <img src="/assets/profile4.png" />
+        </div>
+        <div class="item">
+          <img src="/assets/profile13.png" />
+        </div>
+        <div class="item">
+          <img src="/assets/profile14.png" />
+        </div>
+        <div class="item">
+          <img src="/assets/dog3.png" />
+        </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-</script>
+      </div>
+    </div>
+    <!-- jquery script file for carousel use -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+    </script>
+    <!-- carousel script file -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+    </script>
+    <!-- carosuel script file to set propeties -->
+    <script type="text/javascript">
+      $('.owl-carousel').owlCarousel({ loop:true, margin:10, nav:false,
+      dots:false, autoplay:true, autoplayTimeout : 2000, autoheight:false,
+      stagePadding : 50, responsive:{ 0:{ items:1 }, 600:{ items:3 }, 1000:{
+      items:5 } } })
+    </script>
 
-<script type="text/javascript">
- $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false,
-    dots:false,
-    autoplay:true,
-    autoplayTimeout : 2000,
-    autoheight:false,
-    
-  stagePadding : 50,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
-</script>
-
-</body>
+  </body>
 </html>
+<!-- redirect to logout.js file-->
 {{!-- {{#if loggedIn}} --}}
 <script src="/js/logout.js"></script>
 {{!-- {{/if}} --}}

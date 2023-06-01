@@ -1,10 +1,14 @@
+<!-- Display comments -->
+
 <div class="review">
+  <!-- repeat for each comment -->
   {{#each this}}
   <div class="eachreview">
     <p class="card-body2">
+      <!-- print commentText -->
     {{commentText}}
     </br></br>
-    
+    <!-- print username, and date -->
 - {{user.username}}, {{format_date dateCreated}}
     </p>
   </div>
