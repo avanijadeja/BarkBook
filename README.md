@@ -56,13 +56,11 @@ so applicaiton now starts user have to write localhost:3001 in browser so user c
 
 # Usage
 
-
 ![video_gifformat](./public/assets/projectdemo.gif)
 
+The URL of the functional, deployed application - https://avani-barkbook.herokuapp.com/
 
-The URL of the functional, deployed application - https://barkbookapp.herokuapp.com/
-
-The URL of the GitHub repository - https://github.com/MogleyBear06/BarkBook.git
+The URL of the GitHub repository - https://github.com/avanijadeja/BarkBook
 
 # Credits
 
