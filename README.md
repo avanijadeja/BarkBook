@@ -80,7 +80,7 @@ so applicaiton now starts user have to write localhost:3001 in browser so user c
 
 ![video_gifformat]()
 
-The URL of the functional, deployed application - https://barkbook.herokuapp.com/
+The URL of the functional, deployed application - https://barkbookapp.herokuapp.com/
 
 The URL of the GitHub repository - https://github.com/MogleyBear06/BarkBook.git
 
