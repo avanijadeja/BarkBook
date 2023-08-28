@@ -58,7 +58,7 @@ so applicaiton now starts user have to write localhost:3001 in browser so user c
 
 ![video_gifformat](./public/assets/projectdemo.gif)
 
-The URL of the functional, deployed application - https://avani-barkbook.herokuapp.com/
+The URL of the functional, deployed application - https://barkbook-2-8fb5fde6f147.herokuapp.com/
 
 The URL of the GitHub repository - https://github.com/avanijadeja/BarkBook
 
